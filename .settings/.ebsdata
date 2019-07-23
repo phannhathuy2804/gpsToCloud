@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LegatoProject:LegatoBinProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LegatoProject="http://legatoProject.ecore" etpID="[Built-in] Legato for WP85/WP75 R16.1 (18.6.4.wp85-wp75-native-x86_64-201811231238) - WP85XX">
+  <configurations mbsConfigId="legato.core.af.projectType.exe.release.823409085" adefFileName="${ProjName}.adef"/>
+  <configurations mbsConfigId="legato.core.af.projectType.exe.debug.1709417304" adefFileName="${ProjName}.adef"/>
+</LegatoProject:LegatoBinProject>

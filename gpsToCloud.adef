@@ -1,0 +1,32 @@
+executables:
+{
+	gpstocloud = ( gpsToCloudComponent sensorsComponent)
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( gpstocloud )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
+
+bindings:
+{		
+		gpstocloud.sensorsComponent.le_adc -> modemService.le_adc
+		gpstocloud.gpsToCloudComponent.le_pos -> positioningService.le_pos
+		gpstocloud.gpsToCloudComponent.le_posCtrl -> positioningService.le_posCtrl
+		gpstocloud.gpsToCloudComponent.le_avdata -> avcService.le_avdata
+		
+}

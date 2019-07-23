@@ -1,0 +1,22 @@
+ cflags:
+{
+	 -std=c99
+    -I${CURDIR}/../sensorsComponent
+}
+requires:
+{
+	api:
+	{
+		le_pos.api
+		le_posCtrl.api
+		le_avdata.api
+	}
+	component:
+    {
+        sensorsComponent
+    }
+}
+sources:
+{
+	gpsToCloudComponent.c
+}
